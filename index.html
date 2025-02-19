@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <main>
+      <div class="container-letter">
+        <div class="cover"></div>
+        <div class="paper">
+          <div class="cont">
+            <div class="uno">
+              <h1>
+                Wanna <br />
+                be <br />
+                my <br />
+                valentine ?
+              </h1>
+            </div>
+            <div class="dos">
+              <img src="images/snoopy2.png" alt="" />
+            </div>
+          </div>
+        </div>
+        <div class="letter"></div>
+      </div>
+      <div class="option">
+        <button id="open" onclick="document.getElementById('miAudio').play()">
+          Abrir
+        </button>
+        <button id="close" onclick="document.getElementById('miAudio').pause()">
+          Cerrar
+        </button>
+      </div>
+    </main>
+    <audio id="miAudio">
+      <source src="audio/belonsToMe.mp3" type="audio/mpeg" />
+    </audio>
+    <script src="script.js"></script>
+  </body>
+</html>
